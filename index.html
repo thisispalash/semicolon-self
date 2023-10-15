@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Semicolon Fingers</title>
-
+  <link rel="icon" href="arms-400.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,34 +13,45 @@
 </noscript>
 
 <body>
-  <h1>Home</h1>
-  <p>Ini adalah halaman home</p>
-  <div class="unclicked" id="test" style="width: 10%;">
-    <p>
-      &nbsp;
-    </p>
-    <p>
-      &nbsp;
-    </p>
-    <p>
-      &nbsp;
-    </p>
-  </div>
+  <main>
+    <h1><u>Semicolon Fing</u>ers</h1>
+    <table>
+      <tr>
+        <td>
+          <div class="poem unclicked" id="a1"></div>
+        </td>
+        <td>
+          <div class="poem unclicked" id="a2"></div>
+        </td>
+        <td>
+          <div class="poem unclicked" id="a3"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="poem unclicked" id="b1"></div>
+        </td>
+        <td>
+          <div class="poem unclicked" id="b2"></div>
+        </td>
+        <td>
+          <div class="poem unclicked" id="b3"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="poem unclicked" id="c1"></div>
+        </td>
+        <td>
+          <div class="poem unclicked" id="c2"></div>
+        </td>
+        <td>
+          <div class="poem unclicked" id="c3"></div>
+        </td>
+      </tr>
+    </table>
+  </main>
 </body>
-
-<script>
-  var box = document.getElementById('test');
-  box.addEventListener('click', function() {
-    // alert('test');
-    box.classList.remove('unclicked');
-    box.classList.add('clicked');
-  });
-  document.addEventListener('click', function() {
-    // alert('test');
-    box.classList.remove('clicked');
-    box.classList.add('unclicked');
-  }, true);
-</script>
 
 <script src="functional.js"></script>
 <script src="telescopic.js"></script>

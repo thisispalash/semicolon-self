@@ -1,8 +1,29 @@
 html {
   background: #95A5A7;
-  padding: 3rem 5rem;
   font-family: monospace;
+  height: 100%;
 }
+
+main {
+  margin: 3vmin 5vmin;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5vmin; 
+}
+
+table {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.poem {
+  min-width: 19vmin;
+  min-height: 19vmin;
+  margin: 1vmin 4vmin;
+}
+
 
 /** media queries **/
 
@@ -33,6 +54,7 @@ html {
 
 /** end media queries **/
 
+
 /** neumorphic styles **/
 
 .clicked {
@@ -47,6 +69,7 @@ html {
   box-shadow: 9.91px 9.91px 15px #889698, -9.91px -9.91px 15px #A2B4B6;
 }
 
+/* unused for now */
 .hovered {
   background: #95A5A7;
   border-radius: 15%;
