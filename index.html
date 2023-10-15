@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Semicolon Fingers</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<noscript>
+
+</noscript>
+
+<body>
+  <h1>Home</h1>
+  <p>Ini adalah halaman home</p>
+  <div class="unclicked" id="test" style="width: 10%;">
+    <p>
+      &nbsp;
+    </p>
+    <p>
+      &nbsp;
+    </p>
+    <p>
+      &nbsp;
+    </p>
+  </div>
+</body>
+
+<script>
+  var box = document.getElementById('test');
+  box.addEventListener('click', function() {
+    // alert('test');
+    box.classList.remove('unclicked');
+    box.classList.add('clicked');
+  });
+  document.addEventListener('click', function() {
+    // alert('test');
+    box.classList.remove('clicked');
+    box.classList.add('unclicked');
+  }, true);
+</script>
+
+<script src="functional.js"></script>
+<script src="telescopic.js"></script>
+
+</html>
