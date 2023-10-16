@@ -29,6 +29,9 @@ table {
   margin: 1vmin 4vmin;
 }
 
+#subtitle {
+  font-size: 1.33rem;
+}
 
 /** media queries **/
 
