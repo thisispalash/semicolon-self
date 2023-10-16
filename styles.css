@@ -9,8 +9,13 @@ main {
   text-align: center;
 }
 
-h1 {
-  margin-bottom: 5vmin; 
+.title {
+  margin-bottom: 5vmin;
+  min-height: 15vmin;
+  background-image: url('arms-400.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 table {
