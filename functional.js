@@ -37,6 +37,14 @@ Object.keys(boxes).forEach(key => {
   }
 });
 
+const modal = document.getElementById('reader');
+const closeBtn = document.getElementById('closeReader');
+const poemTitle = document.getElementById('poemTitle');
+const poemBody = document.getElementById('poemBody');
+
+closeBtn.onclick = function () {
+  modal.style.display = 'none';
+}
 
 document.onclick = function (event) {
 
@@ -45,12 +53,24 @@ document.onclick = function (event) {
 
   if (ids.includes(id)) {
     const box = document.getElementById(id);
+    
+    // neumorphic charm
     box.classList.add('clicked');
     box.classList.remove('hovered');
     box.classList.remove('unclicked');
-    document.addEventListener('click', function() {
-      box.classList.add('unclicked');
-      box.classList.remove('clicked');
+
+    // open modal and load poem
+    modal.style.display = 'block';
+    poemTitle.innerHTML = `<b>${poems[id]}</b>`;
+    
+    document.addEventListener('click', function(e) {
+      
+      if(e.target == modal) {
+        modal.style.display = 'none';
+        box.classList.add('unclicked');
+        box.classList.remove('clicked');
+      }
+
     }, true);
   }
 }
