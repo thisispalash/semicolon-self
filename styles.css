@@ -33,6 +33,28 @@ table {
   font-size: 1.33rem;
 }
 
+.poem {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.poem span {
+  display: none;
+}
+
+.poem span.on {
+  display: inline;
+}
+
+.poem a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.poem a:hover, 
+.poem a:focus {
+  color: #A2B4B6;
+}
 
 /** modal related styles **/
 
@@ -71,12 +93,12 @@ table {
 }
 
 .modal-header {
-  padding: 2vmin 24vmin;
+  padding: 2vmin 24vmin 0;
   font-size: 1.5rem;
 }
 
 .modal-body {
-  padding: 2vmin 24vmin;
+  padding: 0 24vmin 2vmin;
 }
 
 .close {

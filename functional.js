@@ -12,6 +12,17 @@ const poems = {
   c2: 'i feel small today',
   c3: '<em>Amour Futile</em>'
 }
+const files = {
+  a1: 'poetry-how-to',
+  a2: 'taco-tuesday',
+  a3: 'waht-am-i',
+  b1: 'zooming-love',
+  b2: 'welcome-mind',
+  b3: 'rolling-a-spliff',
+  c1: 'perhaps',
+  c2: 'small-today',
+  c3: 'amour-futile',
+}
 
 const subtitleBox = document.getElementById('subtitle');
 const boxes = {
@@ -42,9 +53,6 @@ const closeBtn = document.getElementById('closeReader');
 const poemTitle = document.getElementById('poemTitle');
 const poemBody = document.getElementById('poemBody');
 
-closeBtn.onclick = function () {
-  modal.style.display = 'none';
-}
 
 document.onclick = function (event) {
 
@@ -62,6 +70,7 @@ document.onclick = function (event) {
     // open modal and load poem
     modal.style.display = 'block';
     poemTitle.innerHTML = `<b>${poems[id]}</b>`;
+    $('#poemBody').load(`./files/${files[id]}.html`);
     
     document.addEventListener('click', function(e) {
       
@@ -72,5 +81,12 @@ document.onclick = function (event) {
       }
 
     }, true);
+
+    // if closed through the X button
+    closeBtn.onclick = function () {
+      modal.style.display = 'none';
+      box.classList.add('unclicked');
+      box.classList.remove('clicked');
+    }
   }
 }
