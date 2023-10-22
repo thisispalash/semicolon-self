@@ -78,6 +78,7 @@ document.onclick = function (event) {
         modal.style.display = 'none';
         box.classList.add('unclicked');
         box.classList.remove('clicked');
+        poemBody.innerHTML = '';
       }
 
     }, true);
@@ -87,6 +88,7 @@ document.onclick = function (event) {
       modal.style.display = 'none';
       box.classList.add('unclicked');
       box.classList.remove('clicked');
+      poemBody.innerHTML = '';
     }
   }
 }
