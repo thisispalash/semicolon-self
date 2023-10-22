@@ -105,8 +105,12 @@ table {
 .close {
   color: white;
   float: right;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  /* make close button sticky */
+  position: fixed;
+  bottom:0; right:0;
+  margin: 3vmin;
 }
 .close:hover,
 .close:focus {
