@@ -46,6 +46,14 @@ table {
   display: inline;
 }
 
+.poem p.off {
+  display: none;
+}
+
+.poem p.on {
+  display: block;
+}
+
 .poem a {
   cursor: pointer;
   text-decoration: underline;
