@@ -46,6 +46,14 @@ table {
   display: inline;
 }
 
+.poem p.off {
+  display: none;
+}
+
+.poem p.on {
+  display: block;
+}
+
 .poem a {
   cursor: pointer;
   text-decoration: underline;
@@ -81,10 +89,11 @@ table {
   bottom: 0;
   position: relative;
   background-color: #889698;
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 3vmin auto 7vmin;
   text-align: left;
   overflow: auto;
+  border-radius: 2vmin;
 
   /* Slide in the content */
   animation-name: slideIn;
